@@ -60,7 +60,7 @@ function enable() {
 	for (let k in bindings) {
 		Meta.keybindings_set_custom_handler(bindings[k], Lang.bind(this, onSwitch));
 	}
-
+	updateWorkspaces()
 }
 
 function disable() {
